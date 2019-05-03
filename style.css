@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    background-color: #090b0d;
+    color: #9fb3bf;
+    font-family:'Source Sans Pro', sans-serif;
+}
+.nav_list{
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.main_list li{
+    margin-top: -20px;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.main_list li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #9fb3bf;
+}
+.main_list li a:hover {
+    color: #090b0d;
+    background: #9fb3bf;
+    transition: 0.5s ;
+}
+#portfolio_sublist ul {
+    display: none;
+    padding-left: 0px;
+    width: 150px;
+    margin-top: 13px;
+    position: absolute;
+    z-index: 10;
+}
+#portfolio_sublist:hover a .fas.fa-angle-up{
+    transform: rotate(180deg);
+    transition: 0.2s ;
+}
+#portfolio_sublist ul li {
+    width: 100%;
+    height: 50px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #425059;
+}
+#portfolio_sublist ul li a{
+    color: #090b0d;
+    background-color: #9fb3bf;
+}
+#portfolio_sublist ul li a:hover {
+    color: #9fb3bf;
+    background-color: #090b0d;
+}
+#portfolio_sublist:hover ul{
+    display: block;
+}
+main{
+    position: relative;
+    margin-top: 50px;
+}
+article{
+    display: flex;
+}
+p#heading{
+    font-size: 40px;
+}
+div.text_wrap{
+    margin-top: -40px;
+    position: relative;
+    z-index: 0;
+    width: 650px;
+
+}
+.first_letterstyle{
+    font-size: 30px;
+}
+.image_wrap{
+    width: 600px;
+    height: 500px;
+}
+.image_shadow{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 190px;
+    height: 345px;
+    width: 300px;
+    border: 5px solid #425059;
+    border-radius: 5px;
+}
+.image_container{
+    position: relative;
+    margin-top: -340px;
+    margin-left: 200px;
+    height: 350px;
+    width: 300px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1474479498523-ac9071c05f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=746&q=80);
+    border: 5px solid #9fb3bf;
+}
+footer{
+    text-align: center;
+}
