@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body{
     margin: 0;
     padding: 0;
@@ -57,52 +64,47 @@ body{
 #portfolio_sublist:hover ul{
     display: block;
 }
-main{
-    position: relative;
-    margin-top: 50px;
+.article_container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
-article{
-    display: flex;
+.image_container{
+    padding: 50px;
 }
-p#heading{
-    font-size: 40px;
-}
-div.text_wrap{
-    margin-top: -40px;
-    position: relative;
-    z-index: 0;
-    width: 650px;
+.profile_image::before{
+    content: "";
+    min-height: 100%;
+    border: 5px solid #425059;
+    width: 100%;
+    left: -30px;
+    top: -30px;
+    border-radius: 6px;
+    z-index: -10;
+    position: absolute;
 
+}
+.profile_image{
+    border: 6px solid #9fb3bf;
+    border-radius: 6px;
+    width: auto;
+    position: relative;
+    min-height: 500px;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1474479498523-ac9071c05f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=746&q=80);
+}
+.text_wrap{
+    max-width: auto;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    height: 100vh;
+}
+.text_wrap>h1{
+    font-size: 40px;
 }
 .first_letterstyle{
     font-size: 30px;
-}
-.image_wrap{
-    width: 600px;
-    height: 500px;
-}
-.image_shadow{
-    position: relative;
-    margin-top: 10px;
-    margin-left: 190px;
-    height: 345px;
-    width: 300px;
-    border: 5px solid #425059;
-    border-radius: 5px;
-}
-.image_container{
-    position: relative;
-    margin-top: -340px;
-    margin-left: 200px;
-    height: 350px;
-    width: 300px;
-    border-radius: 5px;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1474479498523-ac9071c05f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=746&q=80);
-    border: 5px solid #9fb3bf;
 }
 footer{
     text-align: center;
